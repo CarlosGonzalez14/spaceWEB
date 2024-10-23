@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "OpcticWave Portfolio",
-  description: "This our my portfolio",
+  description: "This our portfolio",
 };
 
 export default function RootLayout({
