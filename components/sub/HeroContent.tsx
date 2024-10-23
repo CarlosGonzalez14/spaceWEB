@@ -18,7 +18,7 @@ const HeroContent = () => {
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
+        {/* <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
@@ -26,7 +26,7 @@ const HeroContent = () => {
           <h1 className="Welcome-text text-[13px]">
             Fullstack Developer Portfolio
           </h1>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           variants={slideInFromLeft(0.5)}
@@ -34,7 +34,7 @@ const HeroContent = () => {
         >
           <span>
             Providing
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-300">
               {" "}
               the best{" "}
             </span>
