@@ -469,9 +469,17 @@ video {
 .m-auto{
   margin: auto;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .my-5{
   margin-top: 1.25rem;
@@ -518,6 +526,9 @@ video {
 .flex{
   display: flex;
 }
+.grid{
+  display: grid;
+}
 .hidden{
   display: none;
 }
@@ -535,6 +546,9 @@ video {
 }
 .min-h-screen{
   min-height: 100vh;
+}
+.w-10\/12{
+  width: 83.333333%;
 }
 .w-5{
   width: 1.25rem;
@@ -560,6 +574,9 @@ video {
 .max-w-\[600px\]{
   max-width: 600px;
 }
+.max-w-lg{
+  max-width: 32rem;
+}
 .translate-y-5{
   --tw-translate-y: 1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -577,6 +594,9 @@ video {
 }
 .cursor-pointer{
   cursor: pointer;
+}
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-row{
   flex-direction: row;
@@ -604,9 +624,6 @@ video {
 }
 .justify-around{
   justify-content: space-around;
-}
-.gap-10{
-  gap: 2.5rem;
 }
 .gap-20{
   gap: 5rem;
@@ -638,14 +655,14 @@ video {
 .border{
   border-width: 1px;
 }
-.border-\[\#2A0E61\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(42 14 97 / var(--tw-border-opacity));
-}
 .border-\[\#7042f88b\]{
   border-color: #7042f88b;
 }
 .border-\[\#C81658\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(200 22 88 / var(--tw-border-opacity));
+}
+.border-\[\#c81658\]{
   --tw-border-opacity: 1;
   border-color: rgb(200 22 88 / var(--tw-border-opacity));
 }
@@ -706,9 +723,17 @@ video {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
+}
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .px-\[10px\]{
   padding-left: 10px;
@@ -749,6 +774,10 @@ video {
 .py-\[8px\]{
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .pb-80{
   padding-bottom: 20rem;
@@ -842,7 +871,16 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow-\[\#C81658\]\/50{
+  --tw-shadow-color: rgb(200 22 88 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-\[\#c81658\]\/50{
   --tw-shadow-color: rgb(200 22 88 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
 }
@@ -903,20 +941,20 @@ video {
 .button-primary {
   background: linear-gradient(
       180deg,
-      rgba(200, 22, 88, 0) 0%,
-      rgba(200, 22, 88, 0.32) 100%
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
     ),
-    rgba(79, 24, 44, 0.12);
-  box-shadow: inset 0 0 12px #AB345F;
+    rgba(113, 47, 255, 0.12);
+  box-shadow: inset 0 0 12px #bf97ff3d;
 }
 .button-primary:hover {
   background: linear-gradient(
       180deg,
-      rgba(200, 22, 88, 0) 0%,
-      rgba(200, 22, 88, 0.42) 100%
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
     ),
-    rgba(79, 24, 44, 0.24);
-  box-shadow: inset 0 0 12px #FF4D8E;
+    rgba(113, 47, 255, 0.24);
+  box-shadow: inset 0 0 12px #bf97ff70;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -947,8 +985,17 @@ html {
   .md\:block{
     display: block;
   }
-  .md\:flex-row{
-    flex-direction: row;
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+
+@media (min-width: 1024px){
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
