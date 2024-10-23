@@ -469,6 +469,10 @@ video {
 .m-auto{
   margin: auto;
 }
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -480,9 +484,6 @@ video {
 .my-\[20px\]{
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 .mb-\[15px\]{
   margin-bottom: 15px;
@@ -498,9 +499,6 @@ video {
 }
 .mr-\[10px\]{
   margin-right: 10px;
-}
-.mr-\[15px\]{
-  margin-right: 15px;
 }
 .mt-2{
   margin-top: 0.5rem;
@@ -769,6 +767,10 @@ video {
   font-size: 3.75rem;
   line-height: 1;
 }
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
 .text-\[12px\]{
   font-size: 12px;
 }
@@ -790,15 +792,11 @@ video {
 .text-\[40px\]{
   font-size: 40px;
 }
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-\[60px\]{
   font-size: 60px;
 }
-.text-xl{
-  font-size: 1.25rem;
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 .font-bold{
@@ -832,9 +830,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[30\]{
-  color: 30;
 }
 .opacity-30{
   opacity: 0.3;
@@ -949,9 +944,6 @@ html {
 
 
 @media (min-width: 768px){
-  .md\:mr-20{
-    margin-right: 5rem;
-  }
   .md\:block{
     display: block;
   }
